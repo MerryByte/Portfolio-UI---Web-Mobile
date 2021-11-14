@@ -15,6 +15,9 @@
 
 .wrapper {
     /* padding: 0 13px 0 13px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 body {
@@ -55,8 +58,10 @@ header {
 
 .intro {
     width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     align-items: center;
     margin-top: 30px;
@@ -68,6 +73,10 @@ header {
     background-repeat: no-repeat;
     width: 174px;
     height: 180px;
+}
+
+.intro__profile--information {
+    max-width: 497px;
 }
 
 .intro__profile--information>h2,
@@ -179,7 +188,7 @@ p {
 
 .featured-works__post {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -192,7 +201,7 @@ p {
     height: auto;
 }
 
-.featured-works__desciption {
+.featured-works__description {
     margin-top: 15px;
 }
 
@@ -202,7 +211,7 @@ p {
     justify-content: space-between;
     width: 100%;
     max-width: 160px;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 
 .featured-works__info>p {
@@ -214,11 +223,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 62px;
-    font-size: 12px;
+    width: 60px;
+    font-size: 16px;
     color: white;
     background: #142850;
-    border-radius: 20px;
+    border-radius: 60px;
     font-weight: bold;
 }
 
@@ -281,4 +290,43 @@ footer {
 .footer__linkedin-icn {
     background: url(../images/Linkedin-icn.png);
     background-repeat: no-repeat;
+}
+
+@media (min-width: 875px) {
+    .intro {
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: space-between;
+    }
+    .post:nth-of-type(2) {
+        margin-top: 0;
+        margin-left: 13px;
+    }
+    /* FEATURED */
+    .featured-works__image {
+        max-height: 180px;
+        max-width: 246px;
+    }
+    .featured-works__post {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 840px;
+        margin-top: 20px;
+    }
+    .featured-works__description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 0;
+        align-items: space-between;
+    }
+    .featured-works__desciption>h3 {
+        font-size: 30px;
+    }
+    .featured-works__info {
+        padding: 10px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
