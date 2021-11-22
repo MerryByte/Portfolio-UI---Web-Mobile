@@ -17,11 +17,29 @@
 </head>
 
 <body>
+
     <header>
-        <div class="nav__hamburger">
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
+        <div class="sidebar">
+            <ul class="nav-in-bar">
+                <li>Work</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+
+        </div>
+        <div class="nav-wrapper">
+
+            <button type="button" class="theme"><div class="theme-btn-white"></div></button>
+            <ul class="nav">
+                <li>Work</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <div class="nav__hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
         </div>
     </header>
     <div class="wrapper">
@@ -34,42 +52,65 @@
             </div>
         </div>
         <div class="posts">
-            <h2 class='posts-title card--title'>Recent posts</h2>
+            <div class="posts__title-wrapper">
+                <h2 class='posts-title card--title'>Recent posts</h2>
+                <div class="posts__view-all">View All</div>
+            </div>
             <div class="posts__wrapper">
+
                 <div class="post">
                     <h3>Making a design system from scratch</h3>
                     <div class="post__info">
-                        <p>12 Feb 2020</p>
+                        <p class='post__date post-info--font'>12 Feb 2020</p>
                         <div class="divider"></div>
-                        <p>Design, Pattern</p>
+                        <p class='post__category post-info--font'>Design, Pattern</p>
                     </div>
                     <p class='post__bio'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
+
                 <div class="post">
                     <h3>Creating pixel perfect icons in Figma</h3>
                     <div class="post__info">
-                        <p>12 Feb 2020</p>
+                        <p class='post__date post-info--font'>12 Feb 2020</p>
                         <div class="divider"></div>
-                        <p>Design, Pattern</p>
+                        <p class='post__category post-info--font'>Design, Pattern</p>
                     </div>
                     <p class='post__bio'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
+
             </div>
         </div>
+
+        <!-- FEATURED -->
         <div class="featured-works">
             <h2 class=' featured-title card--title'>Featured works</h2>
+
             <div class="featured-works__post">
-                <img class='featured-works__image' src="images/designing-dashboards.png">
+                <img class='featured-works__image' src="images/vibrant-portraits.png">
                 <div class="featured-works__description">
-                    <h3>Designing Dashboards</h3>
+                    <h3>Vibrant Portraits of 2020</h3>
                     <div class="featured-works__info">
-                        <div class="featured-works__year">2020</div>
-                        <p>Dashboard</p>
+                        <div class="featured-works__year">2018</div>
+                        <p>Illustration</p>
                     </div>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
-
             </div>
+
+            <div class="horizontal__divider"></div>
+
+            <div class="featured-works__post">
+                <img class='featured-works__image' src="images/36-days-of-malayalam.png">
+                <div class="featured-works__description">
+                    <h3>36 Days of Malayalam type</h3>
+                    <div class="featured-works__info">
+                        <div class="featured-works__year">2018</div>
+                        <p>Typography</p>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+
             <div class="horizontal__divider"></div>
             <div class="featured-works__post">
                 <img class='featured-works__image' src="images/designing-dashboards.png">
@@ -83,8 +124,9 @@
                 </div>
 
             </div>
-            <div class="horizontal__divider"></div>
         </div>
+
+        <!-- FOOTER -->
         <footer>
             <div class="footer__wrapper">
                 <div class="footer__social-links">
@@ -99,7 +141,7 @@
             </div>
         </footer>
     </div>
-    <script src="script.js" async defer></script>
+    <script src="javascript/script.js" async defer></script>
 </body>
 
 </html>
